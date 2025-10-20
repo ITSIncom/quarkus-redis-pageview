@@ -17,7 +17,7 @@ public class PageViewRepository {
 
     public PageViewRepository(RedisDataSource ds) {
         longCommands = ds.value(Long.class);
-        keyCommands = ds.key();X
+        keyCommands = ds.key();
     }
 
     public long incrementPageView(String pageName) {
